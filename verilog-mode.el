@@ -3441,7 +3441,7 @@ See also `verilog-font-lock-extra-types'.")
 		   1 'font-lock-constant-face append)
                  ;; Fontify variable names in declarations
                  (list
-                  verilog-declaration-re
+                  verilog-declaration-re-2-no-macro ;declaration type with optional (un)signed keyword and range
                   (list
                    ;; Anchored matcher (lookup Search-Based Fontification)
                    'verilog-declaration-varname-matcher
